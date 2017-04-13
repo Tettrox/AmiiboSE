@@ -1,0 +1,195 @@
+html
+{
+	overflow-x: hidden;
+}
+
+html *
+{
+	font-family: 'Baloo Bhaina';
+}
+
+body
+{
+	background: radial-gradient(ellipse at center, rgba(255,106,0,1) 0%,rgba(238,9,121,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(0,113,234,1) 0%,rgba(0,101,196,1) 100%);
+	background: radial-gradient(ellipse at center, #ffc500 0%, #ff5722 100%);
+}
+
+#Header
+{
+	display: block;
+	position: fixed;
+	left: 0px;
+	width: 100%;
+	height: 80px;
+	z-index: 1;
+	background-color: whitesmoke;
+	border-bottom: 2px gray solid;
+}
+
+#HeaderTitle
+{
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 15px;
+}
+
+#FooterControlsText, #FooterCopyrightText
+{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+}
+
+#FooterCopyrightText
+{
+	position: absolute;
+	top: 32px;
+}
+
+#Search
+{
+	display: block;
+	position: absolute;
+	top: 34%;
+	left: 80%;
+	width: 10%;
+	height: 25px;
+}
+
+#Results
+{
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	top: 15%;
+}
+
+#FooterInfo
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#Footer
+{
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	z-index: 1;
+	background-color: whitesmoke;
+}
+
+.AmiiboCollection
+{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.AmiiboCollectionTitle
+{
+	display: block;
+	position: relative;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.AmiiboDisplay
+{
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 12px;
+	font-size: 13px;
+	background-color: transparent;
+	border: 3px orange solid;
+}
+
+.AmiiboThumbnail
+{
+	display: block;
+	position: relative;
+	width: 120px;
+	height: 120px;
+	margin: auto;
+}
+
+.AmiiboCompTable
+{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	padding: 2px 2px 2px 2px;
+	background-color: white;
+	border: 2px black solid;
+	z-index: 1;
+}
+
+.AmiiboDisplay > .AmiiboDesc:hover+.AmiiboCompTable
+{
+	display: flex;
+}
+
+.AmiiboName
+{
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+.AmiiboDesc
+{
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+.PurchaseLink
+{
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	top: 218px;
+	color: white;
+	text-decoration: none;
+	border-top: 2px orange solid;
+	padding: 0px 8px 2px 8px;
+}
+
+.PL_Amazon
+{
+	left: 0px;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+}
+
+.PL_eBay
+{
+	display: none;
+	left: 140px;
+}
+
+.PL_Walmart
+{  }
+
+/*The Dark Turbo Charge Donkey Kong Amiibo has a name that is too long to fit properly in the box. As such, its font size has to be reduced by 1px off of the font size used for others.*/
+div[title*="Dark Turbo Charge Donkey Kong"]
+{
+	font-size: 12px;
+}
